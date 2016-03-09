@@ -55,10 +55,31 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="myTableView" destination="QF2-3c-akH" id="eE9-kK-7OR"/>
+                        <segue destination="0l5-FV-3q1" kind="push" id="hmG-sW-jDY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Method View Controller-->
+        <scene sceneID="YLp-zl-JuA">
+            <objects>
+                <viewController storyboardIdentifier="methordVC" id="0l5-FV-3q1" customClass="CBMethodViewController" customModule="CBSwiftLearn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJc-H3-zBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJC-zB-HfR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pSs-N7-7j9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L3V-E6-ukH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3N-KE-i1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="761" y="341"/>
         </scene>
     </scenes>
 </document>

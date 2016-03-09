@@ -38,7 +38,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
 
     func initArrayData() {
-        arrayData = [["methord","方法"]]
+        arrayData = [["methordVC","方法"]]
     }
 
     //MARK: - UITableView Delegate and DataSource
@@ -64,6 +64,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        self.turnToVCBy(vcStrIndex: self.arrayData[indexPath.row][0])
+    }
+    
+    //MARK: - 跳转方法
+    func turnToVCBy(vcStrIndex strIndex:String) {
+        let toVC: UIViewController! = self.storyboard?.instantiateViewControllerWithIdentifier(strIndex)
+        self.navigationController?.pushViewController(toVC, animated: true)
     }
 }
 
